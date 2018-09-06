@@ -10,12 +10,12 @@ Using the new APIs in [Knockout 3.0.0](https://github.com/knockout/knockout/rele
 
 ### Download
 
-* Minified: [knockout.punches.min.js](http://mbest.github.io/knockout.punches/knockout.punches.min.js)
-* Source: [knockout.punches.js](http://mbest.github.io/knockout.punches/knockout.punches.js)
+- Minified: [knockout.punches.min.js](http://mbest.github.io/knockout.punches/knockout.punches.min.js)
+- Source: [knockout.punches.js](http://mbest.github.io/knockout.punches/knockout.punches.js)
 
 ### Documentation
 
-* [http://mbest.github.io/knockout.punches/](http://mbest.github.io/knockout.punches/)
+- [http://mbest.github.io/knockout.punches/](http://mbest.github.io/knockout.punches/)
 
 ### License and Contact
 
