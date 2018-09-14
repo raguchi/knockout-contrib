@@ -1,27 +1,19 @@
-describe('Preprocess binding properties', function() {
-  beforeEach(jasmine.prepareTestNode)
+import ko from 'knockout'
+import { addBindingPropertyPreprocessor } from '../src/preprocessBindingProperty'
 
-  it('Should preprocess the specified binding property', function() {
-    try {
-      var value
-      ko.bindingHandlers['a'] = {
-        init: function(element, valueAccessor) {
-          value = valueAccessor()
-        }
+describe('Preprocess binding properties', () => {
+  it('Should preprocess the specified binding property', () => {
+    const testNode = document.createElement('dev')
+    let value = ''
+    ko.bindingHandlers.a = {
+      init(element, valueAccessor) {
+        value = valueAccessor()
       }
-      ko.punches.preprocessBindingProperty.addPreprocessor(
-        'a',
-        'b',
-        function() {
-          return '"new value"'
-        }
-      )
-      testNode.innerHTML =
-        '<div data-bind=\'a: {b: "old value", c: "unrelated value"}\'></div>'
-      ko.applyBindings(null, testNode)
-      expect(value).toEqual({ b: 'new value', c: 'unrelated value' })
-    } finally {
-      delete ko.bindingHandlers['a']
     }
+    addBindingPropertyPreprocessor('a', 'b', () => '"new value"')
+    testNode.innerHTML =
+      '<div data-bind=\'a: {b: "old value", c: "unrelated value"}\'></div>'
+    ko.applyBindings(null, testNode)
+    expect(value).toEqual({ b: 'new value', c: 'unrelated value' })
   })
 })
