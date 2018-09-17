@@ -1,17 +1,18 @@
-## Knockout.Punches
+# punches
 
-Using the new APIs in [Knockout 3.0.0](https://github.com/knockout/knockout/releases/tag/v3.0.0beta), this plugin provides a set of enhanced binding syntaxes.
+Tweaks + additional syntax for KnockoutJS (<4)
 
-1. Embedded text and attribute bindings
-2. Text filters
-3. Namespaced dynamic bindings
-4. Wrapped event callbacks
-5. Expression-based event handling
+> This package is forked from [mbest/knockout.punches](https://github.com/mbest/knockout.punches)
 
-### Download
+## Changes from Upstream
 
-- Minified: [knockout.punches.min.js](http://mbest.github.io/knockout.punches/knockout.punches.min.js)
-- Source: [knockout.punches.js](http://mbest.github.io/knockout.punches/knockout.punches.js)
+- Bundled TypeScript definitions
+- Remove "[Expression-based event handling](http://mbest.github.io/knockout.punches/#expression-based-event-handling)"
+- (@TODO) Default filters extracted to individual [filters.\*](..) packages
+- Remove ability to set custom `wrapExpression` and `attributeBinding` functions
+- Modularization (smaller exposed API, see [src/index.ts](./src/index.ts) for exports)
+
+See the [CHANGELOG](./md) for more
 
 ### Documentation
 
@@ -21,6 +22,6 @@ Using the new APIs in [Knockout 3.0.0](https://github.com/knockout/knockout/rele
 
 **License:** MIT (http://www.opensource.org/licenses/mit-license.php)
 
-Michael Best<br>
-https://github.com/mbest<br>
+Michael Best  
+https://github.com/mbest  
 mbest@dasya.com
