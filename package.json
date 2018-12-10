@@ -21,7 +21,7 @@
     "@types/jest": "^23.3.9",
     "@types/jquery": "^3.3.22",
     "@types/jsdom": "^12.2.0",
-    "@types/lodash": "^4.14.117",
+    "@types/lodash": "4.14.118",
     "@types/node": "^10.12.1",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.6.0",
