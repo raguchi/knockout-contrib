@@ -1,0 +1,30 @@
+{
+  "name": "@profiscience/knockout-contrib-router-plugins-init",
+  "version": "2.0.0-rc.14",
+  "license": "WTFPL",
+  "author": "Casey Webb (https://caseyWebb.xyz)",
+  "homepage": "https://profiscience.github.io/knockout-contrib/packages/router.plugins.init",
+  "bugs": "https://github.com/Profiscience/knockout-contrib/issues",
+  "repository": "github:Profiscience/knockout-contrib",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/node/index.js",
+  "module": "dist/default/index.js",
+  "esnext": "dist/esnext/index.js",
+  "types": "index.ts",
+  "sideEffects": false,
+  "peerDependencies": {
+    "@profiscience/knockout-contrib-router": ">=2.0.0-rc.0",
+    "@profiscience/knockout-contrib-router-plugins-component": ">=2.0.0-rc.0",
+    "knockout": "^3.5.0-rc2"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
+  },
+  "devDependencies": {
+    "@profiscience/knockout-contrib-jest-matchers": "^2.0.0-rc.3",
+    "@profiscience/knockout-contrib-router": "^2.0.0-rc.11",
+    "@profiscience/knockout-contrib-router-plugins-component": "^2.0.0-rc.14"
+  }
+}
